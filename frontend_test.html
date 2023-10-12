@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Ass.css">
+</head>
+
+<body>
+    <header>
+        <div class="container row">
+            <button class="nav__toggle" aria-label="open navigation">
+                <span class="hamburger"></span>
+            </button>
+            <a href="#" class="logo">Startup 3</a>
+            <nav class="nav">
+                <ul role="list" class="nav__list">
+                    <li class="nav__item"><a class="nav__link" href="">Overview</a></li>
+                    <li class="nav__item"><a class="nav__link" href="">Prices</a></li>
+                    <li class=" nav__item"><a class="nav__link" href="">Blog</a></li>
+                    <li class="nav__item"><a class="nav__link" href="">Feedback</a></li>
+                    <li class=" nav__item"><a class="nav__link nav__button" href="">Purchase</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main class="flex-row container p-4 gap-4">
+        <div class="hero container">
+            <h1 class="hero__heading">Generate Awesome Web Pages</h1>
+            <p class="hero__para">The most important of the start up is the samples.The samples form a set of 25 usable
+                pages you can use
+                as is or you can add new blocks
+            </p>
+            <button class="nav__button hero__button">Learn More</button>
+        </div>
+        <div class="form-wrapper container">
+            <form action="" class="form smt-2">
+                <h3 class="form__heading">Sign Up Now</h3>
+                <input type="text" class="form__input" placeholder="Your email" />
+                <input type="password" class="form__input" placeholder="your password" />
+                <div class="persist">
+                    <input type="checkbox" checked="checked" />
+                    <span>I agree to the terms of the service</span>
+                </div>
+                <button class="form__button bg-dark">Sign Up</button>
+                <div class="flex-row">
+                    <span class="hr"></span><span>or</span><span class="hr"></span>
+                </div>
+                <button class="form__button bg-light">Login Via Twitter</button>
+                <p>Do you have an Account ? <a class="form__link font-18" href="">Sign In</a></p>
+            </form>
+        </div>
+    </main>
+
+    <script>
+
+        const navToggle = document.querySelector(".nav__toggle");
+        const nav = document.querySelector('.nav');
+        const hamburger = document.querySelector('.hamburger');
+        navToggle.addEventListener("click", () => {
+            nav.classList.toggle("nav__visible")
+            hamburger.classList.toggle("open")
+        })
+
+    </script>
+
+</body>
+
+</html>
