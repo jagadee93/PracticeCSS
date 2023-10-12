@@ -89,7 +89,7 @@ header {
   position: absolute;
   left: 0;
   border-radius: 50%;
-  background-color: red;
+  background-color: #e93a7d;
   width: 3em;
   height: 3em;
   border: none;
@@ -151,7 +151,6 @@ header {
 .nav__visible {
   visibility: visible;
   height: auto;
-  background-color: green;
   position: relative;
 }
 
@@ -215,8 +214,9 @@ header {
   color: #25dac5;
 }
 .form__button {
-  width: 100%;
+  width: 80%;
   padding: 1em 0;
+  cursor:pointer;
   border-radius: 2em;
   border: none;
   margin: 1em 0;
