@@ -64,6 +64,11 @@ header {
   padding-top: 2em;
 }
 
+a[aria-disabled] {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
 .container {
   width: 93%;
   margin: 0 auto;
